@@ -18,6 +18,7 @@
 		EE6155CE2B257EF40025348E /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6155CD2B257EF30025348E /* FrameworkDetailView.swift */; };
 		EE6155D02B2580FE0025348E /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6155CF2B2580FE0025348E /* AFButton.swift */; };
 		EE6155D22B2585030025348E /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6155D12B2585030025348E /* FrameworkGridViewModel.swift */; };
+		EE6155D42B260CCB0025348E /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6155D32B260CCA0025348E /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EE6155CD2B257EF30025348E /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		EE6155CF2B2580FE0025348E /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		EE6155D12B2585030025348E /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		EE6155D32B260CCA0025348E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				EE6155CD2B257EF30025348E /* FrameworkDetailView.swift */,
 				EE6155CF2B2580FE0025348E /* AFButton.swift */,
 				EE6155D12B2585030025348E /* FrameworkGridViewModel.swift */,
+				EE6155D32B260CCA0025348E /* SafariView.swift */,
 			);
 			path = "Apple-Framework";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				EE6155D02B2580FE0025348E /* AFButton.swift in Sources */,
 				EE4274042B1E301C00CB0796 /* Apple_FrameworkApp.swift in Sources */,
 				EE6155D22B2585030025348E /* FrameworkGridViewModel.swift in Sources */,
+				EE6155D42B260CCB0025348E /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

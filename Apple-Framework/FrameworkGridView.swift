@@ -35,7 +35,7 @@ struct FrameworkGridView: View{
             .navigationTitle("Apple Framework")
             .sheet(isPresented: $viewModel.isShowingDetailView){
                 FrameworkDetailView(framework: viewModel.selectedFramwork!,
-                    isShowingDetailView: $viewModel.isShowingDetailView
+                                    isShowingDetailView: $viewModel.isShowingDetailView
                 )
             }
         }
