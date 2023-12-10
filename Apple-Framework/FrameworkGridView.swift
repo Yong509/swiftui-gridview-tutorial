@@ -10,6 +10,9 @@ import SwiftUI
 
 struct FrameworkGridView: View{
     
+    @StateObject var viewModel = FrameworkGridViewModel()
+    //inittialize brand new view model, if injecting it or initialize with view model use @observeObject
+    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible()),
@@ -23,17 +26,25 @@ struct FrameworkGridView: View{
                 ){
                     ForEach(MockData.frameworks, id: \.id){
                         framework in FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramwork = framework
+                            }
                     }
                 }
             }
             .navigationTitle("Apple Framework")
+            .sheet(isPresented: $viewModel.isShowingDetailView){
+                FrameworkDetailView(framework: viewModel.selectedFramwork!,
+                    isShowingDetailView: $viewModel.isShowingDetailView
+                )
+            }
         }
     }
 }
 
 struct FrameworkGridView_Previews: PreviewProvider{
     static var previews: some View{
-        FrameworkGridView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        FrameworkGridView()
     }
 }
 
